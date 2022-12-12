@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <title>Basketball Scoreboard</title>
+</head>
+<body>
+    <div id="primary-container" class="scoreboard--wrapper">
+        <div id="main-scoreboard" class="scoreboard">
+            <section id="timer-control" class="scoreboard--timer">
+                <div id="inner-black" class="scoreboard--black">
+                    <label id="primary-timer-label" class="scoreboard--label scoreboard__timer">
+                        START
+                    </label>
+                </div>
+            </section>
+            <section id="bottom-container" class="scoreboard--bottom--container">
+                <section id="away-score" class="scoreboard--score--container">
+                    <label id="away-text" class="scoreboard--text">
+                        GUEST
+                    </label>
+                    <section id="away-score-total" class="scoreboard--score--backing">
+                        <label id="away-score-label" class="scoreboard--label scoreboard__score">
+                            000
+                        </label>
+                    </section>
+                    <section class="away--button--container">
+                        <section id="away--buttons">
+                            <button class="button--control" onclick="addAwayThree()">+3</button>
+                            <button class="button--control" onclick="addAwayTwo()">+2</button>
+                            <button class="button--control" onclick="addAwayOne()">+1</button>
+                        </section>
+                    </section>
+                </section>
+                <section id="period-tracker" class="scoreboard--period--tracker">
+                    <label id="period-tracker-label" class="scoreboard--label scoreboard__period__tracker">
+                        0
+                    </label>
+                    <label id="period-label" class="scoreboard--label scoreboard__period">
+                        Period
+                    </label>
+                    <section class="timer--buttons--container">
+                        <button class="timer--button--control" onclick="resetGame()">RESET</button>
+                        <button class="timer--button--control" onclick="startGame()">START</button>
+                    </section>
+                </section>
+                <section id="home-score" class="scoreboard--score--container">
+                    <label id="home-text" class="scoreboard--text">
+                        HOME
+                    </label>
+                    <section id="home-score-total" class="scoreboard--score--backing">
+                        <label id="home-score-label" class="scoreboard--label scoreboard__score">
+                            000
+                        </label>
+                    </section>
+                    <section id="home--buttons">
+                        <button class="button--control" onclick="addHomeThree()">+3</button>
+                        <button class="button--control" onclick="addHomeTwo()">+2</button>
+                        <button class="button--control" onclick="addHomeOne()">+1</button>
+                    </section>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
