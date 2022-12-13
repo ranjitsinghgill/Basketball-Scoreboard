@@ -120,3 +120,6 @@ function startTimer(duration) {
         }
     }, 1000)
 }
+window.startTimer = startTimer
+window.startGame = startGame
+window.resetGame = resetGame
