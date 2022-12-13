@@ -123,3 +123,13 @@ function startTimer(duration) {
 window.startTimer = startTimer
 window.startGame = startGame
 window.resetGame = resetGame
+window.addAwayThree = addAwayThree
+window.addAwayTwo = addAwayTwo
+window.addAwayOne = addAwayOne
+window.addHomeThree = addHomeThree
+window.addHomeTwo = addHomeTwo
+window.addHomeOne = addHomeOne
+window.addToHomeScore = addToHomeScore
+window.addToAwayScore = addToAwayScore
+window.refreshAwayScore = refreshAwayScore
+window.refreshHomeScore = refreshHomeScore
